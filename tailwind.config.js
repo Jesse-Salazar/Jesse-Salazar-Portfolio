@@ -17,7 +17,17 @@ module.exports = {
         darkGrayishBlue: 'hsl(227, 12%, 61%)',
         veryDarkBlue: 'hsl(233, 12%, 13%)',
         veryPaleRed: 'hsl(13, 100%, 96%)',
-        veryLightGray: 'hsl(0, 0%, 98%)'
+        veryLightGray: 'hsl(0, 0%, 98%)',
+        lightTealBlue: '#abd1c6',
+        pageBlack: '#222629',
+        pageText: '#94a1b2',
+        resume: '#525659',
+        formButton: '#e16162',
+        formInput: '#004643',
+        leftSideStatic: '#004643',
+        socialLinks: '#abd1c6',
+        highlight: '#f9bc60',
+        formButtonHover: 'hsl(360,68%,73%)'
       }
     },
   },
