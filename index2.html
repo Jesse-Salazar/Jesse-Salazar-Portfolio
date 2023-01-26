@@ -81,7 +81,7 @@
                     <p class="mt-5 text-center">I'm also a career radio broadcast professional. I sort of fell into it after high school and as it turned out, I was pretty good at it! In my role as an assistant program director and music director, I interacted a lot with various apps and data manipulaton. I made the decision recently to transition into web development based on my admiration for the tech industry.
                     </p>
                     <!-- Button -->
-                    <div class="flex justify-center "><a href="#portfolio" id="button" class="p-3 px-6 pt-2 text-white bg-white rounded-md baseline hover:bg-brightRedLight">Let's Get Started</a>
+                    <div class="flex justify-center "><a href="#portfolio" id="button" class="p-3 px-6 pt-2 text-white bg-white rounded-md baseline ">Let's Get Started</a>
                     </div>
             </section>
             <!-- Portfolio -->
@@ -92,26 +92,25 @@
                     </header>
                     <p class="mt-5 text-center">Theses are a few examples of projects I've either created or participated in.Below each image is a description of the project, and hovering over the image will show a piece of code used to create the project.</p>
                     <div class="block lg:flex lg:space-x-10 lg:justify-evenly">
-                        <article class="w-full lg:flex-col lg:w-56 lg:border border-gray-400">
-                        <img src="/img/Jesse-Salazar.jpg" class="bg-black w-56 h-56 object-cover mx-auto" />
+                        
+                        <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
+                        <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
                         <header class="text-center">Nuclear Reactor Fusion</header>
                         <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
                         </article>
                         
-                        <article class="w-full lg:flex-col lg:w-56 lg:border border-gray-400">
-                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-56 h-56 object-cover mx-auto" />
+                        <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
+                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
                             <header class="text-center">Nuclear Reactor Fusion</header>
                             <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
                         </article>
                             
-                        <article class="w-full lg:flex-col lg:w-56 lg:border border-gray-400">
-                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-56 h-56 object-cover mx-auto" />
+                        <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
+                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
                             <header class="text-center">Nuclear Reactor Fusion</header>
                             <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
                         </article>
                     </div> 
-
-
                 </div>
 
             </section>
@@ -122,12 +121,14 @@
                         <h1 class="text-4xl">Resume</h1>
                     </header>
                     <p class="mt-5 text-center">Please review my complete resume below. Additionally, there is an option to download the Word document to your device for your convenience.</p>
+                
                 </div>
-                <iframe src="/files/Jesse_Salazar_Resume.pdf" class="w-full md:h-[900px] lg:h-[1122px]">
+                <button type="button" id="resBtn" class="collapsible w-full pb-5 text-socialLinks">Open</button>
+                <iframe src="/files/Jesse_Salazar_Resume.pdf" class="w-full md:h-[900px] lg:h-[1122px] hidden">
                 </iframe>
             </section>
             <!-- Contact -->
-            <section id="contact" class="bg-gray-100 text-center">
+            <section id="contact" class="bg-white text-center">
                 <div class="container p-12 text-gray-500">
                     <header class="text-center">
                         <h1 class="text-4xl">Contact</h1>
@@ -136,7 +137,7 @@
                 </div>
                 <!-- Form -->
                 <div class="block p-6 rounded-lg shadow-lg bg-white">
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScxPp6p-LOvhPC6FxvA9D6VEJitcTvkrAMu5wMOkoEZnhSWfw/formResponse" method="post">
+                    <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScxPp6p-LOvhPC6FxvA9D6VEJitcTvkrAMu5wMOkoEZnhSWfw/formResponse" target="my-response-iframe">
                       <div class="flex">
                         <div class="form-group mb-6 flex-col w-1/2">
                         <input type="text" name="entry.1093327952" class="form-control
@@ -152,7 +153,7 @@
                           transition
                           ease-in-out
                           m-0
-                          focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none" id="exampleInput7"
+                          focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none" id=""
                           placeholder="Name" required>
                       </div>
                       <div class="form-group mb-6 flex-col w-1/2">
@@ -169,7 +170,7 @@
                           transition
                           ease-in-out
                           m-0
-                          focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none" id="exampleInput8"
+                          focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none" id=""
                           placeholder="Email address" required>
                       </div>
                     </div>
@@ -192,7 +193,7 @@
                           m-0
                           focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none
                         "
-                        id="exampleFormControlTextarea13"
+                        id=""
                         rows="3"
                         placeholder="Message" required
                       ></textarea>
@@ -203,7 +204,7 @@
                           id="exampleCheck87" checked>
                         <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this message</label>
                       </div> -->
-                      <button type="submit" value="submit" onsubmit="formSubmit()" class="
+                      <button type="submit" class="
                         w-1/4
                         px-10
                         py-2.5
@@ -222,7 +223,8 @@
                         duration-150
                         ease-in-out">Send</button>
                     </form>
-                    <div id="formOutputBox"></div>
+                    <div id="formOutputBox" class="text-2xl text-brightRedLight"></div>
+                    <iframe id="my-response-iframe" name="my-response-iframe"></iframe>
                   </div>
             </section>
             <div id="footerTwo">
@@ -230,5 +232,19 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        // set the target on the form to point to a hidden iframe
+        // some browsers need the target set via JavaScript, no idea why...
+        document.getElementById('form').target = 'my-response-iframe';
+        // detect when the iframe reloads
+        var iframe = document.getElementById('my-response-iframe');
+        if (iframe) {
+          iframe.onload = function () {
+            // now you can do stuff, such as displaying a message or redirecting to a new page.
+            document.getElementById("form").reset();
+            document.getElementById('formOutputBox').innerHTML='Form Sent Successfully!';
+          }
+        }
+     </script>
     <script src="/js/script.js"></script>
 </body>

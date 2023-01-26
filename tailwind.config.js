@@ -21,7 +21,7 @@ module.exports = {
         lightTealBlue: '#abd1c6',
         pageBlack: '#222629',
         pageText: '#94a1b2',
-        resume: '#525659',
+        resume: '#323639',
         formButton: '#e16162',
         formInput: '#004643',
         leftSideStatic: '#004643',

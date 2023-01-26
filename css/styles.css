@@ -668,8 +668,8 @@ video {
   height: 3.5rem;
 }
 
-.h-56 {
-  height: 14rem;
+.h-60 {
+  height: 15rem;
 }
 
 .h-4 {
@@ -688,8 +688,8 @@ video {
   width: 100%;
 }
 
-.w-56 {
-  width: 14rem;
+.w-64 {
+  width: 16rem;
 }
 
 .w-1\/2 {
@@ -927,7 +927,7 @@ video {
 
 .bg-resume {
   --tw-bg-opacity: 1;
-  background-color: rgb(82 86 89 / var(--tw-bg-opacity));
+  background-color: rgb(50 54 57 / var(--tw-bg-opacity));
 }
 
 .bg-formButton {
@@ -1022,19 +1022,14 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.px-52 {
-  padding-left: 13rem;
-  padding-right: 13rem;
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .pt-2 {
@@ -1051,6 +1046,10 @@ video {
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-center {
@@ -1163,6 +1162,11 @@ video {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-brightRedLight {
+  --tw-text-opacity: 1;
+  color: hsl(12 88% 69% / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -1321,6 +1325,11 @@ video {
 
 #socialLinks li a:hover {
   transform: scale(1.3);
+}
+
+#my-response-iframe {
+  visibility: hidden;
+  height: 1px;
 }
 
 .checked\:border-highlight:checked {
@@ -1540,8 +1549,8 @@ video {
     height: 1122px;
   }
 
-  .lg\:w-56 {
-    width: 14rem;
+  .lg\:w-64 {
+    width: 16rem;
   }
 
   .lg\:flex-col {
