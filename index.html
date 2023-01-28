@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ticker.css">
     <script src="https://kit.fontawesome.com/d7dcbda5ee.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
@@ -41,11 +42,11 @@
 
                 <!-- Social Icons -->
                     <ul id="socialLinks" class="flex space-x-4 justify-center text-2xl text-socialLinks">
-                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="https://twitter.com/webdevjesse" target="_blank" class="fa fa-twitter"></a></li>
                         <li><a href="#" class="fa fa-facebook-f"></a></li>
-                        <li><a href="#" class="fa fa-github"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-envelope"></a></li>
+                        <li><a href="https://github.com/Jesse-Salazar" target="_blank" class="fa fa-github"></a></li>
+                        <li><a href="https://instagram.com/webdevjesse" target="_blank" class="fa fa-instagram"></a></li>
+                        <li><a href="#contact" class="fa fa-envelope"></a></li>
                     </ul>
 
             </div>
@@ -71,14 +72,23 @@
                             <a href="#contact">Contact</a>
                         </div>
                     </div>
-            
+            <!-- Temporary ticker while site is under construction -->
+            <div class="hwrap"><div class="hmove">
+                <div class="hitem uppercase">visitors please note... portfolio is a work-in-progress project</div>
+                <div class="hitem uppercase">Site is currently unpublished</div>
+              </div></div>
+
             <!-- About -->
             <section id="intro" class="bg-veryLightGray">
-                <div class="container p-7 lg:p-12 text-gray-500">
-                    <header class="text-center lg:px-28 lg:pt-20 pb-7">
-                        <h2 class="text-4xl">Hi! My name is Jesse. I'm a recent graduate of the Generation USA Full stack developer program. </h2>
+                <div class="container pt-7 lg:px-12 lg:pt-12 lg:pb-10 text-gray-500">
+                    <header class="text-center lg:px-28 lg:pt-5">
+                        <h2 class="text-4xl">Hey there! &#128075; <br />My name is Jesse.<br /> I'm a recent graduate of the Generation USA Full stack developer program. </h2>
                     </header>
-                    <p class="mt-5 text-center">I'm also a career radio broadcast professional. I sort of fell into it after high school and as it turned out, I was pretty good at it! In my role as an assistant program director and music director, I interacted a lot with various apps and data manipulaton. I made the decision recently to transition into web development based on my admiration for the tech industry.
+                    <p class="mt-5 mb-5 text-center"><strong>I'm also a career radio broadcast professional.</strong> I sort of fell into it after high school and as it turned out, I was pretty good at it! I was the funny guy you heard every morning on your way to work, or every afternoon as you were driving home (or to happy hour!) <br />I also held titles on the administrative side as <i>Assistant Program Director (APD)</i> and <i>Music Director (MD)</i>. In those roles, I interacted daily with various apps and data manipulaton. </p>
+                    <p class="mt-5 mb-5 text-center">    
+                    Based on my admiration for programming, I made the decision recently to transition into web development full-time. I successfully completed a fully-immersive four-month dev bootcamp, signed up for several online courses, consistently watch a ton of YouTube videos and continue to educate myself on the ever-changing landscape of software development.</p> 
+                    <p class="mt-5 mb-5 text-center">
+                    My journey has only begun, but my passion for the industry, along with my drive to succeed and growth mindset will undoubtebly prove to be invaluable to any lucky company or organization willing to invest in my talent. If you're intrigued and ready to see some real code examples...&#128071;
                     </p>
                     <!-- Button -->
                     <div class="flex justify-center "><a href="#portfolio" id="button" class="p-3 px-6 pt-2 text-white bg-white rounded-md baseline ">Let's Get Started</a>
@@ -87,28 +97,28 @@
             <!-- Portfolio -->
             <section id="portfolio" class="bg-gray-100">
                 <div class="container p-7 lg:p-12 text-gray-500">
-                    <header class="text-center lg:px-28 pb-7">
+                    <header class="text-center lg:px-28 pb-5">
                         <h2 class="text-4xl">Portfolio</h2>
                     </header>
-                    <p class="mt-5 text-center">Theses are a few examples of projects I've either created or participated in.Below each image is a description of the project, and hovering over the image will show a piece of code used to create the project.</p>
+                    <p class="mt-5 pb-5 text-center">Below each image is a description of the project and when hovering over the image, a section of code used to build the project will be shown.</p>
                     <div class="block lg:flex lg:space-x-10 lg:justify-evenly">
                         
                         <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
-                        <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
-                        <header class="text-center">Nuclear Reactor Fusion</header>
-                        <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
+                        <img src="https://via.placeholder.com/600/222629/ffffff.png?text=Portfolio+image+will+go+here" class="bg-black w-64 h-60 object-cover mx-auto" />
+                        <header class="text-center">Quizalicious</header>
+                        <p class="text-center bg-white">Test your knowledge of popular music in this fun trivia game!</p>
                         </article>
                         
                         <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
-                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
-                            <header class="text-center">Nuclear Reactor Fusion</header>
-                            <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
+                            <img src="https://via.placeholder.com/600/222629/ffffff.png?text=Portfolio+image+will+go+here" class="bg-black w-64 h-60 object-cover mx-auto" />
+                            <header class="text-center">YouTube Resource Gallery</header>
+                            <p class="text-center bg-white">Save and organize helpful resource videos from YouTube to aid in personal learning and development</p>
                         </article>
                             
                         <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
-                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
-                            <header class="text-center">Nuclear Reactor Fusion</header>
-                            <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
+                            <img src="https://via.placeholder.com/600/222629/ffffff.png?text=Portfolio+image+will+go+here" class="bg-black w-64 h-60 object-cover mx-auto" />
+                            <header class="text-center">Personal Portfolio</header>
+                            <p class="text-center bg-white">Fully responsive site including sections for introduction, portfolio, resume, and contact info.</p>
                         </article>
                     </div> 
                 </div>

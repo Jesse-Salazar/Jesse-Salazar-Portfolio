@@ -4,247 +4,263 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/d7dcbda5ee.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+    <title>Jesse Salazar Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Wrapper for all of the content -->
-    <div class="grid grid-cols-4">
-        <!-- Wrapper for the navigation and socials-->
-        <div id="nav" class="hidden md:col-span-1 bg-leftSideStatic text-pageText md:flex md:flex-col left-0 overflow-y-auto fixed float-left h-full">
-            
-                <!-- div for the card -->
-                <div class="flex justify-evenly py-10">
-                    <div class="flex-col">
-                        <img src="/img/Jesse-Salazar.jpg" class="h-14 w-14 object-cover rounded-full" />
-                    </div>
-                    <div class="flex-col text-right">
-                        <span class="text-2xl text-white">Jesse Natividad</span>
-                        <p class="text-white">Web Developer</p>
-                    </div>
-                </div>
-                <!-- Profile Nav -->
-            <div class="grow text-right flex flex-col h-full justify-between left-0 top-0 overflow-y-auto transition-none">  
-                <nav id="side-nav">
-                    <ul class="md:text-2xl xl:text-xl">
-                        <li><a href="#intro" id=""><span class="fa fa-user-circle-o"></span>Intro</a></li>
-                        <li><a href="#portfolio" id=""><span class="fa fa-folder"></span>Portfolio</a></li>
-                        <li><a href="#resume" id=""><span class="fa fa-file-word-o"></span>Resume</a></li>
-                        <li><a href="#contact" id=""><span class="fa fa-volume-control-phone"></span>Contact</a></li>
-                    </ul>
-                </nav>
-            </div>    
-            <!-- end nav -->
-
-            <div class="">
-
-                <!-- Social Icons -->
-                    <ul id="socialLinks" class="flex space-x-4 justify-center text-2xl text-socialLinks">
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-facebook-f"></a></li>
-                        <li><a href="#" class="fa fa-github"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-envelope"></a></li>
-                    </ul>
-
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt="" class="">
             </div>
-        </div> 
+            <!-- Menu Items -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-300">Pricing</a>
+                <a href="#" class="hover:text-gray-300">About Us</a>
+                <a href="#" class="hover:text-gray-300">Contact</a>
+                <a href="#" class="hover:text-gray-300">Community</a>
+                <a href="#" class="hover:text-gray-300">Product</a>
+            </div>
+            <!-- Button -->
+            <a href="#" class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
 
-        <!-- Main Content -->
-        <div class="w-full col-span-4 container mx-auto md:ml-[375px] md:col-span-3">
-            <div class="pt-5 pr-5 flex justify-end">            
-                    <!-- Hamburger Icon -->
-                        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                            <span class="hamburger-top"></span>
-                            <span class="hamburger-middle"></span>
-                            <span class="hamburger-bottom"></span>
-                        </button>
-            </div>      
-            
-                    <!-- mobile menu -->
-                    <div class="md:hidden">
-                        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                            <a href="#intro">Intro</a>
-                            <a href="#portfolio">Porfolio</a>
-                            <a href="#resume">Resume</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                    </div>
-            
-            <!-- About -->
-            <section id="intro" class="bg-veryLightGray">
-                <div class="container p-7 lg:p-12 text-gray-500">
-                    <header class="text-center lg:px-28 lg:pt-20 pb-7">
-                        <h2 class="text-4xl">Hi! My name is Jesse. I'm a recent graduate of the Generation USA Full stack developer program. </h2>
-                    </header>
-                    <p class="mt-5 text-center">I'm also a career radio broadcast professional. I sort of fell into it after high school and as it turned out, I was pretty good at it! In my role as an assistant program director and music director, I interacted a lot with various apps and data manipulaton. I made the decision recently to transition into web development based on my admiration for the tech industry.
-                    </p>
-                    <!-- Button -->
-                    <div class="flex justify-center "><a href="#portfolio" id="button" class="p-3 px-6 pt-2 text-white bg-white rounded-md baseline ">Let's Get Started</a>
-                    </div>
-            </section>
-            <!-- Portfolio -->
-            <section id="portfolio" class="bg-gray-100">
-                <div class="container p-7 lg:p-12 text-gray-500">
-                    <header class="text-center lg:px-28 pb-7">
-                        <h2 class="text-4xl">Portfolio</h2>
-                    </header>
-                    <p class="mt-5 text-center">Theses are a few examples of projects I've either created or participated in.Below each image is a description of the project, and hovering over the image will show a piece of code used to create the project.</p>
-                    <div class="block lg:flex lg:space-x-10 lg:justify-evenly">
-                        
-                        <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
-                        <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
-                        <header class="text-center">Nuclear Reactor Fusion</header>
-                        <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
-                        </article>
-                        
-                        <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
-                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
-                            <header class="text-center">Nuclear Reactor Fusion</header>
-                            <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
-                        </article>
-                            
-                        <article class="w-full lg:flex-col lg:w-64 lg:border border-gray-400">
-                            <img src="/img/Jesse-Salazar.jpg" class="bg-black w-64 h-60 object-cover mx-auto" />
-                            <header class="text-center">Nuclear Reactor Fusion</header>
-                            <p class="text-center bg-white">this was a nuclear reactor I had to make sure didn't go off the rails.</p>
-                        </article>
-                    </div> 
-                </div>
-
-            </section>
-            <!-- Resume -->
-            <section id="resume" class="bg-resume">
-                <div class="container p-12 text-veryLightGray">
-                    <header class="text-center">
-                        <h1 class="text-4xl">Resume</h1>
-                    </header>
-                    <p class="mt-5 text-center">Please review my complete resume below. Additionally, there is an option to download the Word document to your device for your convenience.</p>
-                
-                </div>
-                <button type="button" id="resBtn" class="collapsible w-full pb-5 text-socialLinks">Open</button>
-                <iframe src="/files/Jesse_Salazar_Resume.pdf" class="w-full md:h-[900px] lg:h-[1122px] hidden">
-                </iframe>
-            </section>
-            <!-- Contact -->
-            <section id="contact" class="bg-white text-center">
-                <div class="container p-12 text-gray-500">
-                    <header class="text-center">
-                        <h1 class="text-4xl">Contact</h1>
-                            <p>Please fill out the form below if you'd like to send a message or for any additional requests and thank you for visiting my profile page!</p>
-                    </header>
-                </div>
-                <!-- Form -->
-                <div class="block p-6 rounded-lg shadow-lg bg-white">
-                    <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScxPp6p-LOvhPC6FxvA9D6VEJitcTvkrAMu5wMOkoEZnhSWfw/formResponse" target="my-response-iframe">
-                      <div class="flex">
-                        <div class="form-group mb-6 flex-col w-1/2">
-                        <input type="text" name="entry.1093327952" class="form-control
-                          w-[99%]
-                          px-3
-                          py-1.5
-                          text-base
-                          font-normal
-                          text-gray-700
-                          bg-white bg-clip-padding
-                          border border-solid border-gray-300
-                          rounded
-                          transition
-                          ease-in-out
-                          m-0
-                          focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none" id=""
-                          placeholder="Name" required>
-                      </div>
-                      <div class="form-group mb-6 flex-col w-1/2">
-                        <input type="email" name="emailAddress"class="form-control
-                          w-full
-                          px-3
-                          py-1.5
-                          text-base
-                          font-normal
-                          text-gray-700
-                          bg-white bg-clip-padding
-                          border border-solid border-gray-300
-                          rounded
-                          transition
-                          ease-in-out
-                          m-0
-                          focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none" id=""
-                          placeholder="Email address" required>
-                      </div>
-                    </div>
-                      <div class="form-group mb-6">
-                        <textarea name="entry.667866867"
-                        class="
-                          form-control
-                          block
-                          w-full
-                          px-3
-                          py-1.5
-                          text-base
-                          font-normal
-                          text-gray-700
-                          bg-white bg-clip-padding
-                          border border-solid border-gray-300
-                          rounded
-                          transition
-                          ease-in-out
-                          m-0
-                          focus:text-gray-700 focus:bg-white focus:border-highlight focus:outline-none
-                        "
-                        id=""
-                        rows="3"
-                        placeholder="Message" required
-                      ></textarea>
-                      </div>
-                      <!-- <div class="form-group form-check text-center mb-6">
-                        <input type="checkbox"
-                          class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-highlight checked:border-highlight focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                          id="exampleCheck87" checked>
-                        <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this message</label>
-                      </div> -->
-                      <button type="submit" class="
-                        w-1/4
-                        px-10
-                        py-2.5
-                        bg-formButton
-                        text-white
-                        font-medium
-                        text-xs
-                        leading-tight
-                        uppercase
-                        rounded
-                        shadow-md
-                        hover:bg-formButtonHover hover:shadow-lg
-                        focus:bg-formButtonHover focus:shadow-lg focus:outline-none focus:ring-0
-                        active:bg-formButtonHover active:shadow-lg
-                        transition
-                        duration-150
-                        ease-in-out">Send</button>
-                    </form>
-                    <div id="formOutputBox" class="text-2xl text-brightRedLight"></div>
-                    <iframe id="my-response-iframe" name="my-response-iframe"></iframe>
-                  </div>
-            </section>
-            <div id="footerTwo">
-                
+        <!-- mobile menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
             </div>
         </div>
-    </div>
-    <script type="text/javascript">
-        // set the target on the form to point to a hidden iframe
-        // some browsers need the target set via JavaScript, no idea why...
-        document.getElementById('form').target = 'my-response-iframe';
-        // detect when the iframe reloads
-        var iframe = document.getElementById('my-response-iframe');
-        if (iframe) {
-          iframe.onload = function () {
-            // now you can do stuff, such as displaying a message or redirecting to a new page.
-            document.getElementById("form").reset();
-            document.getElementById('formOutputBox').innerHTML='Form Sent Successfully!';
-          }
-        }
-     </script>
-    <script src="/js/script.js"></script>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+            <!-- Left Item -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+                    Bring everyone together to build better products
+                </h1>
+                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+                </p>
+                <div class="flex justify-center md:justify-start"><a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="img/illustration-intro.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features">
+        <!-- Flex Container -->
+        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+            <!-- What's different -->
+            <div class="flex-col space-y-12 md:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+                    What's different about Manage?
+                </h2>
+                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+                    Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
+                </p>
+            </div>
+            <!-- Numbered list -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+                <!-- List Item 1 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                                01
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Track company wide progress
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">
+                            Track company wide progress
+                        </h3>
+                        <p class="text-darkGrayishBlue">
+                            See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger bicture again. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- List Item 2 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                                02
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Advanced Built-in reports
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">
+                            Advanced Built-in reports
+                        </h3>
+                        <p class="text-darkGrayishBlue">
+                            Set internal delivery estimates and track progress toward company goals. Our customizable dashboard helps you build out the reports you need to keep stakeholders informed. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- List Item 3 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                                03
+                            </div>
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                Everything you need in one place
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">
+                            Everything you need in one place
+                        </h3>
+                        <p class="text-darkGrayishBlue">
+                            Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <!-- Container for heading and testimonial blocks -->
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl font-bold text-center">What's different about Manage?</h2>
+            <!-- Testimonials container -->
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+                <!-- Testimonial one -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="img/avatar-anisha.png" alt="" class="w-16 -mt-14">
+                    <h5 class="text-lg font-bold">Anisha Lee</h5>
+                    <p class="text-sm text-darkGrayishBlue">"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestons at all times keeps everyone motivated."</p>
+                </div>
+
+                <!-- Testimonial two -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img src="img/avatar-ali.png" alt="" class="w-16 -mt-14">
+                    <h5 class="text-lg font-bold">Ali Bravo</h5>
+                    <p class="text-sm text-darkGrayishBlue">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everone is much more focused"</p>
+                </div>
+
+                <!-- Testimonial three -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img src="img/avatar-richard.png" alt="" class="w-16 -mt-14">
+                    <h5 class="text-lg font-bold">Richard Watts</h5>
+                    <p class="text-sm text-darkGrayishBlue">"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestons at all times keeps everyone motivated."</p>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="my-16">
+                <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+        <!-- Flex Container -->
+         <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+            <!-- Heading -->
+            <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-width-xl md:text-left">Simplify how your team works today.</h2>
+            <!-- button -->
+            <div>
+                <a href="#" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-300">Get Started</a>
+            </div>
+         </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-veryDarkBlue">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and Social Links container -->
+            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">Copyright &copy; 2022, All Rights Reserved</div>
+                <!-- Logo -->
+                <div>
+                    <img src="img/logo-white.svg" class="h-8" alt="">
+                </div>
+                <!-- social links container -->
+                 <div class="flex justify-center space-x-4">
+                    <!-- Link 1 -->
+                    <a href="">
+                        <img src="img/icon-facebook.svg" alt="" class="h-8 hover:scale-125">
+                    </a>
+                    <!-- Link 2 -->
+                    <a href="">
+                        <img src="img/icon-youtube.svg" alt="" class="h-8 hover:scale-125">
+                    </a>
+                    <!-- Link 3 -->
+                    <a href="">
+                        <img src="img/icon-twitter.svg" alt="" class="h-8 hover:scale-125">
+                    </a>
+                    <!-- Link 4 -->
+                    <a href="">
+                        <img src="img/icon-pinterest.svg" alt="" class="h-8 hover:scale-125">
+                    </a>
+                    <!-- Link 5 -->
+                    <a href="">
+                        <img src="img/icon-instagram.svg" alt="" class="h-8 hover:scale-125">
+                    </a>
+                 </div>
+            </div>
+            <!-- List Container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Home</a>
+                    <a href="#" class="hover:text-brightRed">Pricing</a>
+                    <a href="#" class="hover:text-brightRed">Products</a>
+                    <a href="#" class="hover:text-brightRed">About</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Careers</a>
+                    <a href="#" class="hover:text-brightRed">Community</a>
+                    <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+                </div>
+            </div>
+            <!-- Input Container -->
+            <div class="flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Inbox Update">
+                        <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">Go</button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">Copyright &copy; 2022 All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+</html>
