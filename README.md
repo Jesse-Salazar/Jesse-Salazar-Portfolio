@@ -10,3 +10,8 @@ This one-page site is built using mainly stack **HTML,TailwindCSS and Javascript
 
 **The site is a work-in-progress** and is currently unpublished, but you can get an idea of the layout by clicking [here](https://htmlpreview.github.io/?https://github.com/Jesse-Salazar/Jesse-Salazar-Portfolio/blob/main/index.html).
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
