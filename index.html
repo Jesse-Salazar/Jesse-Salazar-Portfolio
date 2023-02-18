@@ -18,7 +18,7 @@
                 <!-- div for the card -->
                 <div class="flex justify-evenly py-10">
                     <div class="flex-col">
-                        <img src="/img/Jesse-Salazar.jpg" class="h-14 w-14 object-cover rounded-full" />
+                        <img src="./img/Jesse-Salazar.jpg" class="h-14 w-14 object-cover rounded-full" />
                     </div>
                     <div class="flex-col text-right">
                         <span class="text-2xl text-white">Jesse Natividad</span>
@@ -106,7 +106,8 @@
                         <article class="w-full lg:flex-col lg:w-72 lg:border border-gray-400">
                         <a href="https://quizalicious.netlify.app/"><img src="./img/Trivia-quick-look.jpeg" class="bg-black object-cover mx-auto cursor-pointer" /></a>
                         <header class="text-center font-bold py-1">Quizalicious</header>
-                        <p class="text-center bg-white px-2">Test your knowledge of popular music in this fun trivia game!<br /><br />Stack Used: HTML,CSS with Bootstrap,Javascript,API</p>
+                        <p class="text-center bg-white px-2">Test your knowledge of popular music in this fun trivia game!<br /><br /><i class="fab fa-html5 text-4xl">&nbsp;</i><i class="fa-brands fa-css3-alt text-4xl">&nbsp;</i><i class="fa-brands fa-square-js text-4xl"></i><br />
+                        TailwindCSS - Local Storage</p>
                         
                         </article>
                         
@@ -245,13 +246,13 @@
     </div>
     <script type="text/javascript">
         // set the target on the form to point to a hidden iframe
-        // some browsers need the target set via JavaScript, no idea why...
+        
         document.getElementById('form').target = 'my-response-iframe';
         // detect when the iframe reloads
         var iframe = document.getElementById('my-response-iframe');
         if (iframe) {
           iframe.onload = function () {
-            // now you can do stuff, such as displaying a message or redirecting to a new page.
+            
             document.getElementById("form").reset();
             document.getElementById('formOutputBox').innerHTML='Form Sent Successfully!';
           }
