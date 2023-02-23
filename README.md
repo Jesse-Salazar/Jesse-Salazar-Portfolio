@@ -13,7 +13,7 @@ This one-page site is built using mainly stack **HTML,TailwindCSS and Javascript
 
 
 
-👇 If you're visiting from AirBnB, this code snippet is for you 👇
+👇Here's a tiny piece of code for recruiters👇
 
 ```
 //Collapsing Resume 
